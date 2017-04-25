@@ -1,6 +1,6 @@
 # npmtest-webflight
 
-#### basic test coverage for  webflight (v0.1.8)  [![npm package](https://img.shields.io/npm/v/npmtest-webflight.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-webflight) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-webflight.svg)](https://travis-ci.org/npmtest/node-npmtest-webflight)
+#### basic test coverage for  [webflight (v0.1.8)](https://github.com/Team-Webflight/WebFlight#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-webflight.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-webflight) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-webflight.svg)](https://travis-ci.org/npmtest/node-npmtest-webflight)
 
 #### Turns a server into a seed for peer-to-peer content delivery
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-webflight/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-webflight/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-webflight/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-webflight/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-webflight/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-webflight/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-webflight/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-webflight/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-webflight/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-webflight/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-webflight/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-webflight/build/coverage.html/index.html)
 
@@ -35,29 +35,9 @@
 ```json
 
 {
-    "name": "webflight",
-    "version": "0.1.8",
-    "description": "Turns a server into a seed for peer-to-peer content delivery",
-    "main": "index.js",
-    "scripts": {
-        "test": "standard && mocha test/tests",
-        "test-mocha": "mocha test/tests/wfstart.js",
-        "test-start": "node test/fixtures/test-website/server.js"
+    "author": {
+        "name": "Team WebFlight"
     },
-    "standard": {
-        "parser": "babel-eslint",
-        "ignore": [
-            "/test/fixtures/*",
-            "/test/tests/wfstart.js",
-            "/test/tests/addStatusBar/*"
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Team-Webflight/WebFlight.git"
-    },
-    "author": "Team WebFlight",
-    "license": "MIT",
     "bugs": {
         "url": "https://github.com/Team-WebFlight/WebFlight/issues"
     },
@@ -79,6 +59,7 @@
         "webtorrent": "^0.82.1",
         "xvfb": "^0.2.3"
     },
+    "description": "Turns a server into a seed for peer-to-peer content delivery",
     "devDependencies": {
         "babel-preset-es2015": "^6.6.0",
         "babelify": "^7.2.0",
@@ -86,7 +67,50 @@
         "chai-as-promised": "^5.2.0",
         "chai-fs": "^0.1.0",
         "standard": "^6.0.8"
-    }
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "8f52f79ec46e16d20dd4ea6712e1506c001f4014",
+        "tarball": "https://registry.npmjs.org/webflight/-/webflight-0.1.8.tgz"
+    },
+    "homepage": "https://github.com/Team-Webflight/WebFlight#readme",
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "carolag"
+        },
+        {
+            "name": "coryc"
+        },
+        {
+            "name": "jfowler"
+        },
+        {
+            "name": "tbywong"
+        }
+    ],
+    "name": "webflight",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Team-Webflight/WebFlight.git"
+    },
+    "scripts": {
+        "test": "standard && mocha test/tests",
+        "test-mocha": "mocha test/tests/wfstart.js",
+        "test-start": "node test/fixtures/test-website/server.js"
+    },
+    "standard": {
+        "parser": "babel-eslint",
+        "ignore": [
+            "/test/fixtures/*",
+            "/test/tests/wfstart.js",
+            "/test/tests/addStatusBar/*"
+        ]
+    },
+    "version": "0.1.8",
+    "bin": {}
 }
 ```
 
